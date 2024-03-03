@@ -1,13 +1,13 @@
-package com.adarsh.androidutility
+package com.adarsh.androidutility.util
 
 import android.content.Context
 import android.widget.Toast
 
-class AndroidUtility(private val context: Context) {
+class MyToast(private val context: Context) {
 
 
 
-    fun showToast(message: String){
+    fun show(message: String){
         Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
     }
 

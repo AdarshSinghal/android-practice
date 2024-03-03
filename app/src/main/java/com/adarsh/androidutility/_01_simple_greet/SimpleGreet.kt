@@ -1,9 +1,9 @@
-package com.adarsh.androidutility._1
+package com.adarsh.androidutility._01_simple_greet
 
 import android.app.Activity
 import android.widget.Button
 import android.widget.EditText
-import com.adarsh.androidutility.AndroidUtility
+import com.adarsh.androidutility.util.MyToast
 import com.adarsh.androidutility.R
 
 class SimpleGreet(private val activity: Activity) {
@@ -16,7 +16,7 @@ class SimpleGreet(private val activity: Activity) {
         greetBtnView.setOnClickListener {
             val nameEditTextView = activity.findViewById<EditText>(R.id.editTextText)
             val name = nameEditTextView.text.toString()
-            AndroidUtility(activity).showToast("Hello $name")
+            MyToast(activity).show("Hello $name")
         }
     }
 }
